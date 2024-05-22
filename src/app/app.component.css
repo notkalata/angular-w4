@@ -41,8 +41,6 @@
   cursor: pointer;
 }
 
-
-/* Positioning each corner button */
 .corner-button.top-left {
   top: 10px;
   left: 10px;
