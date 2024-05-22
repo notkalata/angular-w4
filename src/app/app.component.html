@@ -28,4 +28,10 @@
     >
     </traffic-light>
   </div>
+
+  <button class="center-button" (click)="emergency()">Авария</button>
+  <button class="corner-button top-left" (click)="cross(true)" [disabled]="yTrafficLightsSignal === TrafficLight.RED">Пресечи Горе Ляво</button>
+  <button class="corner-button top-right" (click)="cross(true)" [disabled]="yTrafficLightsSignal === TrafficLight.RED">Пресечи Горе Дясно</button>
+  <button class="corner-button bottom-left" (click)="cross(false)" [disabled]="xTrafficLightsSignal === TrafficLight.RED">Пресечи Долу Ляво</button>
+  <button class="corner-button bottom-right" (click)="cross(false)" [disabled]="xTrafficLightsSignal === TrafficLight.RED">Пресечи Долу Дясно</button>
 </div>
